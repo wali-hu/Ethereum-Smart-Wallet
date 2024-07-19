@@ -1,66 +1,61 @@
-## Foundry
+# Ethereum Smart Wallet
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This project demonstrates a limited-feature version of an Ethereum Smart Wallet with innovative authentication mechanisms. The smart wallet allows users to securely access their Ethereum wallets using various modern authentication methods.
 
-Foundry consists of:
+## Features
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- **Social Media Authentication:** Users can access their wallets through social media platforms using One-Time Passwords (OTPs). This integration allows for a more seamless and user-friendly login experience.
+- **Biometric Authentication:** The wallet supports biometric authentication, providing an additional layer of security. Users can authenticate using their fingerprint or facial recognition, depending on their device capabilities.
+- **Passcode Authentication:** For added security, users can also access their wallets using a passcode. This traditional method complements the more advanced authentication options.
 
-## Documentation
+## Getting Started
 
-https://book.getfoundry.sh/
+To get started with this project, follow these steps:
 
-## Usage
+### Clone the Repository:
 
-### Build
+```bash
+git clone https://github.com/wali-hu/ethereum-smart-wallet.git
+cd ethereum-smart-wallet
 
-```shell
-$ forge build
-```
+## Install Dependencies
 
-### Test
+Ensure you have Node.js installed, then install the project dependencies:
 
-```shell
-$ forge test
-```
+Using npm:
 
-### Format
+```bash
+npm install
 
-```shell
-$ forge fmt
-```
+or if using Yarn:
 
-### Gas Snapshots
+bash
+Copy code
+yarn install
+Run the Application:
+Start the development server:
 
-```shell
-$ forge snapshot
-```
+Using npm:
 
-### Anvil
+bash
+Copy code
+npm start
+or with Yarn:
 
-```shell
-$ anvil
-```
+bash
+Copy code
+yarn start
+Testing:
+You can test the various authentication methods by following the instructions in the project’s documentation.
 
-### Deploy
+Technologies Used
+Ethereum: For blockchain-based wallet functionality.
+React: For building the frontend user interface.
+Ethers.js: For interacting with the Ethereum blockchain.
+Web3Modal: For wallet connection and management.
+Web-Vitals: For monitoring and optimizing performance.
+Contributing
+Feel free to fork this repository and submit pull requests. Contributions to enhance functionality or improve documentation are welcome.
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
